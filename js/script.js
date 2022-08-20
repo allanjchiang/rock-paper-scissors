@@ -13,3 +13,4 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 const playerSelection = prompt("Rock, paper or scissors?");
 const computerSelection = getComputerChoice();
+console.log(playRockPaperScissors(playerSelection, computerSelection));
