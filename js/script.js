@@ -5,4 +5,11 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-console.log(getComputerChoice());
+function playRockPaperScissors(playerSelection, computerSelection) {
+    if (playerSelection === 'rock' && computerSelection === 'rock') {
+        return "It's a draw!";
+    } 
+}
+
+const playerSelection = prompt("Rock, paper or scissors?");
+const computerSelection = getComputerChoice();
