@@ -19,3 +19,4 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
 const computerSelection = getComputerChoice();
 console.log(playRockPaperScissors(playerSelection, computerSelection));
+getComputerChoice();
