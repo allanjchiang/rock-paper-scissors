@@ -1,5 +1,8 @@
 const rockPaperScissors = ['rock', 'paper', 'scissors'];
 
+let win;
+let lose;
+
 function getComputerChoice() {
     const computerChoice = rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)];
     return computerChoice;
