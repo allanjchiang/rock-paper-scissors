@@ -50,7 +50,7 @@ function game() {
         console.log(playRockPaperScissors(playerSelection, computerSelection));
     }
     if (win > lose) {
-        console.log("You won, your score was: " + win + "\nThe computer's score was: " + lose + ".");
+        console.log(`You won, your score was: $(win) \nThe computer's score was: $(lose).`);
     } else if (win < lose) {
         console.log("You lost, your score was: " + win + "\nThe computer's score was: " + lose + ".");
     } else if (win === lose) {
