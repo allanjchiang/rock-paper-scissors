@@ -48,7 +48,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
         const computerSelection = getComputerChoice();
-        playRockPaperScissors(playerSelection, computerSelection);
+        console.log(playRockPaperScissors(playerSelection, computerSelection));
     }
     if (win > lose) {
         console.log("You won, your score was: " + win + " and the computer's score was: " + lose + ".");
