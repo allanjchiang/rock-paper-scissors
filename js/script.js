@@ -57,6 +57,7 @@ function game() {
     } else if (win === lose) {
         console.log("You tied! Your score was: " + win + " and the computer's score was: " + lose + ".");
     }
+    console.log(win + lose);
 }
 
 game();
