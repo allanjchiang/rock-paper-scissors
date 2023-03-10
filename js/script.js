@@ -50,9 +50,9 @@ function game() {
         console.log(playRockPaperScissors(playerSelection, computerSelection));
     }
     if (win > lose) {
-        console.log(`You won, your score was: ${win}. \nThe computer's score was: ${lose}.`);
+        console.log(`You won, your score was: ${win}. \nThe computer's score was: ${lose}. You won by ${win - lose} points.`);
     } else if (win < lose) {
-        console.log(`You lost, your score was: ${win}. \nThe computer's score was: ${lose}.`);
+        console.log(`You lost, your score was: ${win}. \nThe computer's score was: ${lose}. You lost by ${lose - win} points.`);
     } else if (win === lose) {
         console.log(`You tied! Your score was: ${win}. \nThe computer's score was: ${lose}.`);
     }
