@@ -12,26 +12,26 @@ function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
         return "It's a draw!";
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        let win ++;
+        let win++;
         return "You win! Rock beats scissors."
     } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-        let lose ++;
+        let lose++;
         return "You lose! Paper beats rock."
     } else if (playerSelection === 'paper' && computerSelection === 'paper') {
         return "It's a draw!";
     } else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
         return "It's a draw!";
     } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-        let lose ++;
+        let lose++;
         return "You lose! Scissors beats paper.";
     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-        let win ++;
+        let win++;
         return "You win! Paper beats rock.";
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-        let lose ++;
+        let lose++;
         return "You lose! Rock beats scissors";
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        let win ++;
+        let win++;
         return "You win! Scissors beats paper.";
     }
 }
