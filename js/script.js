@@ -48,16 +48,16 @@ function game() {
     for (let i = 0; i < 5; i++) {
         const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
         const computerSelection = getComputerChoice();
-        console.log(playRockPaperScissors(playerSelection, computerSelection));
+        playRockPaperScissors(playerSelection, computerSelection);
+    }
+    if (win > lose) {
+        console.log("You won, your score was: " + win + " and the computer's score was: " + lose + ".");
+    } else if (win < lose) {
+        console.log("You lost, your score was: " + win + " and the computer's score was: " + lose + ".");
+    } else if (win === lose) {
+        console.log("You tied! Your score was: " + win + " and the computer's score was: " + lose + ".");
     }
 }
 
 game();
 
-if (win > lose) {
-    console.log("You won, your score was: " + win + " and the computer's score was: " + lose + ".");
-} else if (win < lose) {
-    console.log("You lost, your score was: " + win + " and the computer's score was: " + lose + ".");
-} else if (win === lose) {
-    console.log("You tied! Your score was: " + win + " and the computer's score was: " + lose + ".");
-}
