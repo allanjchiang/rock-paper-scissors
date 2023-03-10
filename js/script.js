@@ -6,8 +6,8 @@ function getComputerChoice() {
 }
 
 function playRockPaperScissors(playerSelection, computerSelection) {
-    let lose;
-    let win;
+    var lose;
+    var win;
     if (playerSelection === 'rock' && computerSelection === 'rock') {
         return "It's a draw!";
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
