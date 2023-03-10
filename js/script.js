@@ -35,4 +35,4 @@ function game() {
     }
 }
 
-console.log(playRockPaperScissors(playerSelection, computerSelection));
+game();
