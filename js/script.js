@@ -6,8 +6,8 @@ function getComputerChoice() {
 }
 
 function playRockPaperScissors(playerSelection, computerSelection) {
-    var lose;
-    var win;
+    let win;
+    let lose;
     if (playerSelection === 'rock' && computerSelection === 'rock') {
         return "It's a draw!";
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
@@ -41,6 +41,13 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return "You win! Scissors beats paper.";
         console.log("You win! Scissors beats paper.");
     }
+    if (win > lose) {
+        console.log("You won, your score was: " + win + " and the computer's score was: " + lose + ".");
+    } else if (win < lose) {
+        console.log("You lost, your score was: " + win + " and the computer's score was: " + lose + ".");
+    } else if (win === lose) {
+        console.log("You tied! Your score was: " + win + " and the computer's score was: " + lose + ".");
+    }
 }
 
 function game() {
@@ -49,14 +56,6 @@ function game() {
         const computerSelection = getComputerChoice();
         console.log(playRockPaperScissors(playerSelection, computerSelection));
     }
-    if (win > lose) {
-        console.log("You won, your score was: " + win + " and the computer's score was: " + lose + ".");
-    } else if (win < lose) {
-        console.log("You lost, your score was: " + win + " and the computer's score was: " + lose + ".");
-    } else if (win === lose) {
-        console.log("You tied! Your score was: " + win + " and the computer's score was: " + lose + ".");
-    }
-    console.log(win + lose);
 }
 
 game();
