@@ -43,10 +43,13 @@ function playRockPaperScissors(playerSelection, computerSelection) {
     }
 }
 
-const btn = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button');
 
-btn.addEventListener('click', () => {
-    playRockPaperScissors();
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        playRockPaperScissors();
+    });
 });
 
 
