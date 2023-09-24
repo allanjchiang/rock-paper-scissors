@@ -45,9 +45,10 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 const btn = document.querySelectorAll('button');
 
-const function = function() {
-    btn.addEventListener('click', playRockPaperScissors());
-};
+btn.addEventListener('click', () => {
+    playRockPaperScissors();
+});
+
 
 
 
