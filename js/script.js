@@ -70,5 +70,5 @@ buttons.forEach((button) => {
 //     }
 // }
 
-game();
+// game();
 
