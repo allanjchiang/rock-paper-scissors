@@ -61,7 +61,7 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         console.log("It's a draw!");
         return "It's a draw!";
     } else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-        const results = document.querySelector('results');
+        const results = document.querySelector('.results');
 
         const scissorsDraw = document.createElement('p');
         scissorsDraw.classList.add('scissorsDraw');
@@ -73,7 +73,7 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return "It's a draw!";
     } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
         lose++;
-        const results = document.querySelector('results');
+        const results = document.querySelector('.results');
 
         const paperLose = document.createElement('p');
         paperLose.classList.add('paperLose');
@@ -85,8 +85,11 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return "You lose! Scissors beats paper.";
     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
         win++;
-        return "You win! Paper beats rock.";
+
+        const results = document.querySelector('.results');
+
         console.log("You win! Paper beats rock.");
+        return "You win! Paper beats rock.";
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
         lose++;
         return "You lose! Rock beats scissors";
