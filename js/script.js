@@ -61,8 +61,16 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         console.log("It's a draw!");
         return "It's a draw!";
     } else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-        return "It's a draw!";
+        const results = document.querySelector('results');
+
+        const scissorsDraw = document.createElement('p');
+        scissorsDraw.classList.add('scissorsDraw');
+        scissorsDraw.textContent = "It's a draw!";
+
+        results.appendChild(scissorsDraw);
+
         console.log("It's a draw!");
+        return "It's a draw!";
     } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
         lose++;
         return "You lose! Scissors beats paper.";
