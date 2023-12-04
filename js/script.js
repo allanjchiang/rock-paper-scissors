@@ -7,6 +7,8 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+const rock = document.querySelector('#rock');
+
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
         return "It's a draw!";
