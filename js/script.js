@@ -8,6 +8,9 @@ function getComputerChoice() {
 }
 
 const rock = document.querySelector('#rock');
+rock.addEventListener('click', () => {
+    playRockPaperScissors(rock);
+});
 
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
