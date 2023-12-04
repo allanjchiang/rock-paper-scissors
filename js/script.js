@@ -98,8 +98,16 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return "You win! Paper beats rock.";
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
         lose++;
-        return "You lose! Rock beats scissors";
+
+        const results = document.querySelector('.results');
+
+        const scissorsLose = document.createElement('p');
+        scissorsLose.classList.add('scissorsLose');
+        scissorsLose.textContent = "You lose! Rock beats scissors";
+
+        results.appendChild(scissorsLose);
         console.log("You lose! Rock beats scissors");
+        return "You lose! Rock beats scissors";
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
         win++;
         return "You win! Scissors beats paper.";
