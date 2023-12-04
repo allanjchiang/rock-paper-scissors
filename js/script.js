@@ -88,6 +88,12 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
         const results = document.querySelector('.results');
 
+        const paperWin = document.createElement('p');
+        paperWin.classList.add('paperWin');
+        paperWin.textContent = "You win! Paper beats rock.";
+
+        results.appendChild(paperWin);
+
         console.log("You win! Paper beats rock.");
         return "You win! Paper beats rock.";
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
