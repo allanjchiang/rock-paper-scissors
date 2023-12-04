@@ -17,6 +17,11 @@ paper.addEventListener('click', () => {
     playRockPaperScissors(paper);
 });
 
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', () => {
+    playRockPaperScissors(scissors);
+});
+
 
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
