@@ -7,22 +7,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-const rock = document.querySelector('#rock');
-rock.addEventListener('click', () => {
-    playRockPaperScissors(rock);
-});
-
-const paper = document.querySelector('#paper');
-paper.addEventListener('click', () => {
-    playRockPaperScissors(paper);
-});
-
-const scissors = document.querySelector('#scissors');
-scissors.addEventListener('click', () => {
-    playRockPaperScissors(scissors);
-});
-
-
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
         const results = document.querySelector('.results');
@@ -130,6 +114,21 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return "You win! Scissors beats paper.";
     }
 }
+
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', () => {
+    playRockPaperScissors(rock);
+});
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', () => {
+    playRockPaperScissors(paper);
+});
+
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', () => {
+    playRockPaperScissors(scissors);
+});
 
 function game() {
     for(let i = 0; i < 10; i++) {
