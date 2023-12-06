@@ -139,6 +139,7 @@ function game() {
             console.log("You lose.");
         } else if (win < 5 || lose < 5) {
             const computerSelection = getComputerChoice();
+            console.log(computerSelection);
             const rock = document.querySelector('#rock');
             rock.addEventListener('click', () => {
                 playRockPaperScissors(rock, computerSelection);
