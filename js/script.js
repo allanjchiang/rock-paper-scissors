@@ -154,9 +154,7 @@ function game() {
             scissors.addEventListener('click', () => {
                 playRockPaperScissors(scissors, computerSelection);
             });
-        }
-    
-    if (win > lose) {
+        } else if (win > lose) {
         console.log(`You won, your score was: ${win}. \nThe computer's score was: ${lose}. \nYou won by ${win - lose} points.`);
     } else if (win < lose) {
         console.log(`You lost, your score was: ${win}. \nThe computer's score was: ${lose}. \nYou lost by ${lose - win} points.`);
