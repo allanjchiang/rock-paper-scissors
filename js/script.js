@@ -126,8 +126,21 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 function game() {
     for(let i = 0; i < 10; i++) {
-        if(win <= 5 || lose <= 5) {
-            const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+        if(win === 5 || lose === 5) {
+            const rock = document.querySelector('#rock');
+            rock.addEventListener('click', () => {
+                playRockPaperScissors(rock);
+            });
+
+            const paper = document.querySelector('#paper');
+            paper.addEventListener('click', () => {
+                playRockPaperScissors(paper);
+            });
+
+            const scissors = document.querySelector('#scissors');
+            scissors.addEventListener('click', () => {
+                playRockPaperScissors(scissors);
+            });
             const computerSelection = getComputerChoice();
             console.log(playRockPaperScissors(playerSelection, computerSelection));
         }
