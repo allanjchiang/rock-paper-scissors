@@ -130,19 +130,18 @@ function game() {
             const computerSelection = getComputerChoice();
             const rock = document.querySelector('#rock');
             rock.addEventListener('click', () => {
-                playRockPaperScissors(rock, computerSelection);
+                console.log(playRockPaperScissors(rock, computerSelection));
             });
 
             const paper = document.querySelector('#paper');
             paper.addEventListener('click', () => {
-                playRockPaperScissors(paper, computerSelection);
+                console.log(playRockPaperScissors(paper, computerSelection));
             });
 
             const scissors = document.querySelector('#scissors');
             scissors.addEventListener('click', () => {
-                playRockPaperScissors(scissors, computerSelection);
+                console.log(playRockPaperScissors(scissors, computerSelection));
             });
-            console.log(playRockPaperScissors(playerSelection, computerSelection));
         }
     }
     if (win > lose) {
