@@ -117,7 +117,8 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 const rock = document.querySelector('#rock');
 rock.addEventListener('click', () => {
-    playRockPaperScissors(rock);
+    const computerSelection = getComputerChoice();
+    playRockPaperScissors(rock, computerSelection);
 });
 
 const paper = document.querySelector('#paper');
