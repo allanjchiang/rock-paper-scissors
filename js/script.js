@@ -127,6 +127,7 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 function game() {
     for(let i = 0; i < 10; i++) {
         if(win === 5 || lose === 5) {
+            const computerSelection = getComputerChoice();
             const rock = document.querySelector('#rock');
             rock.addEventListener('click', () => {
                 playRockPaperScissors(rock);
@@ -141,7 +142,6 @@ function game() {
             scissors.addEventListener('click', () => {
                 playRockPaperScissors(scissors);
             });
-            const computerSelection = getComputerChoice();
             console.log(playRockPaperScissors(playerSelection, computerSelection));
         }
     }
