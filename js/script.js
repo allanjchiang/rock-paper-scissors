@@ -133,8 +133,10 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 function game() {
     for(let i = 0; i < 10; i++) {
-        if(win === 5 || lose === 5) {
-            return;
+        if(win === 5) {
+            console.log("You win!");
+        } else if(lose === 5) {
+            console.log("You lose.");
         } else if (win < 5 || lose < 5) {
             const computerSelection = getComputerChoice();
             const rock = document.querySelector('#rock');
