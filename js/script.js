@@ -126,9 +126,11 @@ function playRockPaperScissors(playerSelection, computerSelection) {
 
 function game() {
     for(let i = 0; i < 10; i++) {
-        const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
-        const computerSelection = getComputerChoice();
-        console.log(playRockPaperScissors(playerSelection, computerSelection));
+        if(win <= 5 || lose <= 5) {
+            const playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+            const computerSelection = getComputerChoice();
+            console.log(playRockPaperScissors(playerSelection, computerSelection));
+        }
     }
     if (win > lose) {
         console.log(`You won, your score was: ${win}. \nThe computer's score was: ${lose}. \nYou won by ${win - lose} points.`);
