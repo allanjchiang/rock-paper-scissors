@@ -25,6 +25,13 @@ scissors.addEventListener('click', () => {
 
 function playRockPaperScissors(playerSelection, computerSelection) {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
+        const results = document.querySelector('.results');
+
+        const rockDraw = document.createElement('p');
+        rockDraw.classList.add('rockDraw');
+        rockDraw.textContent = "It's a draw!";
+
+        results.appendChild(rockDraw);
         return "It's a draw!";
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
         win++;
