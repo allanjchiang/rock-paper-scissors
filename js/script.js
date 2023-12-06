@@ -1,3 +1,11 @@
+        const results = document.querySelector('.results');
+
+        const rockDraw = document.createElement('p');
+        rockDraw.classList.add('rockDraw');
+        rockDraw.textContent = "It's a draw!";
+
+        results.appendChild(rockDraw);
+
 var win = 0;
 var lose = 0;
 const rockPaperScissors = ['rock', 'paper', 'scissors'];
