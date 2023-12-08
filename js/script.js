@@ -4,6 +4,7 @@ let computerScore = 0;
 
 function playRockPaperScissors(playerSelection) {
     const choices = ['rock', 'paper', 'scissors'];
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
 }
 
 
