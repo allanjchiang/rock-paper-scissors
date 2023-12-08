@@ -59,6 +59,8 @@ function announceWinner() {
     playerScore > computerScore 
         ? 'Congratulations! You win.' 
         : 'You lose. Better luck next time.';
+
+    document.body.appendChild(resultDiv);
 }
 
 
