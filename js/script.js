@@ -54,4 +54,7 @@ function announceWinner() {
     document.getElementById('computerScore').textContent = computerScore;
 }
 
-document.querySelector('#rock');
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', () => {
+    playRound('rock');
+});
