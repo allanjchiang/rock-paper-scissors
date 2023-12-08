@@ -4,6 +4,7 @@ let computerScore = 0;
 const rock = document.querySelector('#rock');
 rock.addEventListener('click', () => {
     playRound(rock);
+    alert('Hello world');
 });
 
 const paper = document.querySelector('#paper');
