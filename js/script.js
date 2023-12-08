@@ -58,3 +58,8 @@ const rock = document.querySelector('#rock');
 rock.addEventListener('click', () => {
     playRound('rock');
 });
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', () => {
+    playRound('paper');
+});
