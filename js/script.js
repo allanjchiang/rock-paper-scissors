@@ -3,7 +3,7 @@ let computerScore = 0;
 
 
 function playRockPaperScissors(playerSelection) {
-    
+    const choices = ['rock', 'paper', 'scissors'];
 }
 
 
