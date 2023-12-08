@@ -63,3 +63,8 @@ const paper = document.querySelector('#paper');
 paper.addEventListener('click', () => {
     playRound('paper');
 });
+
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', () => {
+    playRound('scissors');
+});
