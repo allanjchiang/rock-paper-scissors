@@ -1,22 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
 
-const rock = document.querySelector('#rock');
-rock.addEventListener('click', () => {
-    playRound(rock);
-    alert('Hello world');
-});
-
-const paper = document.querySelector('#paper');
-paper.addEventListener('click', () => {
-    playRound(paper);
-});
-
-const scissors = document.querySelector('#scissors');
-scissors.addEventListener('click', () => {
-    playRound(scissors);
-});
-
 
 function playRound(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
@@ -69,3 +53,5 @@ function announceWinner() {
     document.getElementById('playerScore').textContent = playerScore;
     document.getElementById('computerScore').textContent = computerScore;
 }
+
+document.querySelector('#rock');
