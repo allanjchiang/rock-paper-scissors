@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <style>
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rock, Paper, Scissors Game</h1>
+
+<div>
+    <p>Player Score: <span id="playerScore">0</span></p>
+    <p>Computer Score: <span id="computerScore">0</span></p>
+</div>
+
+<div>
+    <button onclick="playRound('rock')">Rock</button>
+    <button onclick="playRound('paper')">Paper</button>
+    <button onclick="playRound('scissors')">Scissors</button>
+</div>
+
+<script>
+    let playerScore = 0;
+    let computerScore = 0;
+
+    function playRound(playerChoice) {
+        const choices = ['rock', 'paper', 'scissors'];
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+        const result = getResult(playerChoice, computerChoice);
+
+        if (result === 'win') {
+            playerScore++;
+        } else if (result === 'lose') {
+            computerScore++;
+        }
+
+        document.getElementById('playerScore').textContent = playerScore;
+        document.getElementById('computerScore').textContent = computerScore;
+
+        if (playerScore === 5 || computerScore === 5) {
+            announceWinner();
+        }
+    }
+
+    function getResult(player, computer) {
+        if (player === computer) {
+            return 'draw';
+        } else if (
+            (player === 'rock' && computer === 'scissors') ||
+            (player === 'paper' && computer === 'rock') ||
+            (player === 'scissors' && computer === 'paper')
+        ) {
+            return 'win';
+        } else {
+            return 'lose';
+        }
+    }
+
+    function announceWinner() {
+        const resultDiv = document.createElement('div');
+        resultDiv.textContent =
+            playerScore > computerScore
+                ? 'Congratulations! You win!'
+                : 'Computer wins. Better luck next time!';
+
+        document.body.appendChild(resultDiv);
+
+        // Reset the scores
+        playerScore = 0;
+        computerScore = 0;
+
+        document.getElementById('playerScore').textContent = playerScore;
+        document.getElementById('computerScore').textContent = computerScore;
+    }
+</script>
+
+</body>
+</html>
