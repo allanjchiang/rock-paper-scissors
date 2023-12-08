@@ -31,6 +31,10 @@ function playRound(playerChoice) {
 
     document.getElementById('playerScore').textContent = playerScore;
     document.getElementById('computerScore').textContent = computerScore;
+
+    if (playerScore === 5 || computerScore === 5) {
+        announceWinner();
+    }
 }
 
 function getResult(player, computer) {
