@@ -53,8 +53,12 @@ function getResult(player, computer) {
 
 
 
-function game() {
-    
+function announceWinner() {
+    const resultDiv = document.createElement('div');
+    resultDiv.textContent =
+    playerScore > computerScore 
+        ? 'Congratulations! You win.' 
+        : 'You lose. Better luck next time.';
 }
 
 
