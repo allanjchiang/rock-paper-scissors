@@ -68,8 +68,3 @@ function announceWinner() {
     document.getElementById('playerScore').textContent = playerScore;
     document.getElementById('computerScore').textContent = computerScore;
 }
-
-
-
-game();
-
