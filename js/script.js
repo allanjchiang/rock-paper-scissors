@@ -28,6 +28,9 @@ function playRound(playerChoice) {
     } else if (result === 'lose') {
         computerScore++;
     }
+
+    document.getElementById('playerScore').textContent = playerScore;
+    document.getElementById('computerScore').textContent = computerScore;
 }
 
 function getResult(player, computer) {
