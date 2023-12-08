@@ -3,17 +3,17 @@ let computerScore = 0;
 
 const rock = document.querySelector('#rock');
 rock.addEventListener('click', () => {
-    playRockPaperScissors(rock);
+    playRound(rock);
 });
 
 const paper = document.querySelector('#paper');
 paper.addEventListener('click', () => {
-    playRockPaperScissors(paper);
+    playRound(paper);
 });
 
 const scissors = document.querySelector('#scissors');
 scissors.addEventListener('click', () => {
-    playRockPaperScissors(scissors);
+    playRound(scissors);
 });
 
 
