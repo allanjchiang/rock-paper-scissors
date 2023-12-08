@@ -32,7 +32,7 @@ function getResult(player, computer) {
     ){
         return 'win';
     } else {
-        return 'draw';
+        return 'lose';
     }
 }
 
