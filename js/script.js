@@ -17,11 +17,17 @@ scissors.addEventListener('click', () => {
 });
 
 
-function playRockPaperScissors(playerChoice) {
+function playRound(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
 
     const result = getResult(playerChoice, computerChoice);
+
+    if (result === 'win') {
+        playerScore++;
+    } else if (result === 'lose') {
+        computerScore++;
+    }
 }
 
 function getResult(player, computer) {
