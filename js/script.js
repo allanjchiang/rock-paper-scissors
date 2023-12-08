@@ -61,6 +61,9 @@ function announceWinner() {
         : 'You lose. Better luck next time.';
 
     document.body.appendChild(resultDiv);
+
+    playerScore = 0;
+    computerScore = 0;
 }
 
 
